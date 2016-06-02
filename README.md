@@ -1,2 +1,2 @@
 # obey-schedule
-Schedule for Obey Convention as a progressive web application build with Elm lang
+Schedule for [Obey Convention](http://www.obeyconvention.com/) as a progressive web application built with Elm lang
