@@ -1,0 +1,20 @@
+{
+  "name": "obey",
+  "version": "0.0.0",
+  "description": "Obey",
+  "private": true,
+  "directories": {
+  },
+  "scripts": {
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Gordon B. Isnor",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
