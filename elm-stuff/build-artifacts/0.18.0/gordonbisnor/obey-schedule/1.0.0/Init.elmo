@@ -1,0 +1,8 @@
+var _gordonbisnor$obey_schedule$Init$init = function (location) {
+	var currentRoute = _gordonbisnor$obey_schedule$Routing$parseLocation(location);
+	return {
+		ctor: '_Tuple2',
+		_0: _gordonbisnor$obey_schedule$InitialModel$initialModel(currentRoute),
+		_1: _elm_lang$core$Platform_Cmd$none
+	};
+};

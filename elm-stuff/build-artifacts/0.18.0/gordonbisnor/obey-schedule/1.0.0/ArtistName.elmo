@@ -1,0 +1,23 @@
+var _gordonbisnor$obey_schedule$ArtistName$artistDetails = function (artist) {
+	return _elm_lang$html$Html$a(
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$href(artist.link),
+			_1: {ctor: '[]'}
+		});
+};
+var _gordonbisnor$obey_schedule$ArtistName$artistName = function (artist) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Events$onClick(
+				_gordonbisnor$obey_schedule$Message$ShowArtistDetail(artist.id)),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text(artist.name),
+			_1: {ctor: '[]'}
+		});
+};

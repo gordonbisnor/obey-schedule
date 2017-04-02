@@ -1,0 +1,15 @@
+var _gordonbisnor$obey_schedule$DayList$dayList = F2(
+	function (model, days) {
+		var listItems = A2(
+			_elm_lang$core$List$map,
+			_gordonbisnor$obey_schedule$DayItem$dayItem(model),
+			days);
+		return A2(
+			_elm_lang$html$Html$ul,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('list-unstyled days'),
+				_1: {ctor: '[]'}
+			},
+			listItems);
+	});

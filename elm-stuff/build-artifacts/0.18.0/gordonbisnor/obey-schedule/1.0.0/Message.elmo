@@ -1,0 +1,11 @@
+var _gordonbisnor$obey_schedule$Message$HideArtistDetail = {ctor: 'HideArtistDetail'};
+var _gordonbisnor$obey_schedule$Message$ShowArtistDetail = function (a) {
+	return {ctor: 'ShowArtistDetail', _0: a};
+};
+var _gordonbisnor$obey_schedule$Message$ChooseDay = function (a) {
+	return {ctor: 'ChooseDay', _0: a};
+};
+var _gordonbisnor$obey_schedule$Message$OnLocationChange = function (a) {
+	return {ctor: 'OnLocationChange', _0: a};
+};
+var _gordonbisnor$obey_schedule$Message$NoOp = {ctor: 'NoOp'};

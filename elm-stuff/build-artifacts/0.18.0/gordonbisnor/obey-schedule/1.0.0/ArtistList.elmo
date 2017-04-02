@@ -1,0 +1,11 @@
+var _gordonbisnor$obey_schedule$ArtistList$artistList = function (artists) {
+	var listItems = A2(_elm_lang$core$List$map, _gordonbisnor$obey_schedule$ArtistItem$artistItem, artists);
+	return A2(
+		_elm_lang$html$Html$ul,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('list-unstyled'),
+			_1: {ctor: '[]'}
+		},
+		listItems);
+};

@@ -1,0 +1,29 @@
+var _gordonbisnor$obey_schedule$Routing$NotFoundRoute = {ctor: 'NotFoundRoute'};
+var _gordonbisnor$obey_schedule$Routing$DayRoute = function (a) {
+	return {ctor: 'DayRoute', _0: a};
+};
+var _gordonbisnor$obey_schedule$Routing$HomeRoute = {ctor: 'HomeRoute'};
+var _gordonbisnor$obey_schedule$Routing$matchers = _evancz$url_parser$UrlParser$oneOf(
+	{
+		ctor: '::',
+		_0: A2(_evancz$url_parser$UrlParser$map, _gordonbisnor$obey_schedule$Routing$HomeRoute, _evancz$url_parser$UrlParser$top),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$url_parser$UrlParser$map,
+				_gordonbisnor$obey_schedule$Routing$DayRoute,
+				A2(
+					_evancz$url_parser$UrlParser_ops['</>'],
+					_evancz$url_parser$UrlParser$s('days'),
+					_evancz$url_parser$UrlParser$int)),
+			_1: {ctor: '[]'}
+		}
+	});
+var _gordonbisnor$obey_schedule$Routing$parseLocation = function (location) {
+	var _p0 = A2(_evancz$url_parser$UrlParser$parseHash, _gordonbisnor$obey_schedule$Routing$matchers, location);
+	if (_p0.ctor === 'Just') {
+		return _p0._0;
+	} else {
+		return _gordonbisnor$obey_schedule$Routing$NotFoundRoute;
+	}
+};

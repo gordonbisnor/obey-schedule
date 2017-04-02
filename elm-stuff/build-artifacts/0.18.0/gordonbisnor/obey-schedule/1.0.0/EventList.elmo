@@ -1,0 +1,11 @@
+var _gordonbisnor$obey_schedule$EventList$eventList = function (events) {
+	var listItems = A2(_elm_lang$core$List$map, _gordonbisnor$obey_schedule$EventItem$eventItem, events);
+	return A2(
+		_elm_lang$html$Html$ul,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('list-unstyled events'),
+			_1: {ctor: '[]'}
+		},
+		listItems);
+};

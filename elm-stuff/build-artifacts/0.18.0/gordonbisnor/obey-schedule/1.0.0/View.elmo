@@ -1,0 +1,53 @@
+var _gordonbisnor$obey_schedule$View$showArtistDetail = function (detail) {
+	var _p0 = detail;
+	if (_p0.ctor === 'Just') {
+		return _gordonbisnor$obey_schedule$ArtistDetail$artistDetail(_p0._0);
+	} else {
+		return A2(
+			_elm_lang$html$Html$span,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text(''),
+				_1: {ctor: '[]'}
+			});
+	}
+};
+var _gordonbisnor$obey_schedule$View$view = function (model) {
+	var _p1 = model.artistDetail;
+	if (_p1.ctor === 'Just') {
+		return A2(
+			_elm_lang$html$Html$div,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _gordonbisnor$obey_schedule$View$showArtistDetail(model.artistDetail),
+				_1: {ctor: '[]'}
+			});
+	} else {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('container'),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _gordonbisnor$obey_schedule$PageHeader$pageHeader,
+				_1: {
+					ctor: '::',
+					_0: A2(_gordonbisnor$obey_schedule$DayList$dayList, model, model.data),
+					_1: {
+						ctor: '::',
+						_0: _gordonbisnor$obey_schedule$DayName$dayName(model),
+						_1: {
+							ctor: '::',
+							_0: _gordonbisnor$obey_schedule$EventList$eventList(model.events),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			});
+	}
+};

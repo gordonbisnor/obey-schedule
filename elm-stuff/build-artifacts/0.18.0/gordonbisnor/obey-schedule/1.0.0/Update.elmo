@@ -1,0 +1,51 @@
+var _gordonbisnor$obey_schedule$Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'NoOp':
+				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'ChooseDay':
+				var selectedDays = A2(
+					_elm_lang$core$List$filter,
+					function (e) {
+						return _elm_lang$core$Native_Utils.eq(e.id, _p0._0);
+					},
+					_gordonbisnor$obey_schedule$Content$content);
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{
+							events: _gordonbisnor$obey_schedule$GetEvents$getEvents(selectedDays),
+							selectedDayName: _gordonbisnor$obey_schedule$GetDayName$getDayName(selectedDays)
+						}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'OnLocationChange':
+				var newRoute = _gordonbisnor$obey_schedule$Routing$parseLocation(_p0._0);
+				return A2(_gordonbisnor$obey_schedule$AnalyzeRoute$analyzeRoute, model, newRoute);
+			case 'ShowArtistDetail':
+				var artist = _elm_lang$core$List$head(
+					A2(
+						_elm_lang$core$List$filter,
+						function (e) {
+							return _elm_lang$core$Native_Utils.eq(e.id, _p0._0);
+						},
+						_gordonbisnor$obey_schedule$Artists$artists));
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{artistDetail: artist}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			default:
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{artistDetail: _elm_lang$core$Maybe$Nothing}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+		}
+	});

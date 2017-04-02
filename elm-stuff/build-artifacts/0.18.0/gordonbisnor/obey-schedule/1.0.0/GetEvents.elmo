@@ -1,0 +1,8 @@
+var _gordonbisnor$obey_schedule$GetEvents$getEvents = function (model) {
+	var _p0 = _elm_lang$core$List$head(model);
+	if (_p0.ctor === 'Just') {
+		return _p0._0.events;
+	} else {
+		return {ctor: '[]'};
+	}
+};

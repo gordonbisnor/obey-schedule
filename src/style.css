@@ -1,0 +1,122 @@
+body, html {
+  width: 100vw;
+  height: 100vh; }
+
+.page-header {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-width: 0; }
+
+.page-header img {
+  max-width: 90%; }
+
+* {
+  font-family: 'Opens Sans', sans-serif;
+  font-weight: 300; }
+
+h1, h2, h2 ul li div {
+  text-transform: uppercase;
+  font-family: 'Muli', sans-serif; }
+
+h2 {
+  color: #f6cdd1; }
+
+h2 li {
+  margin-top: .0625em;
+  margin-bottom: .0625em; }
+
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 3em; }
+
+body {
+  background-color: #080307;
+  background-image: url("http://www.obeyconvention.com/wp-content/themes/hoarder/images/OBEY-2017-BG-03.jpg");
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center; }
+
+.container {
+  position: relative;
+  margin: auto; }
+
+li.event {
+  border-bottom: 1px solid #444; }
+
+li.event:first-child {
+  border-top: 1px solid #555; }
+
+a {
+  color: rgba(255, 255, 255, 0.95) !important; }
+
+a:hover, a:visited, a:active {
+  padding-bottom: 1px;
+  text-decoration: none; }
+
+ul.days {
+  width: 100%;
+  display: flex;
+  margin-bottom: 4em; }
+
+ul.days li {
+  align-items: stretch;
+  justify-content: stretch;
+  flex-grow: 1; }
+
+ul.days li a {
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 1em; }
+  ul.days li a:hover {
+    cursor: pointer; }
+
+ul.days li a:hover, ul.days li a.active {
+  background-color: #333; }
+
+dt {
+  display: none; }
+
+dd {
+  font-size: 1.5em; }
+
+.artist-detail {
+  background-image: url("http://www.obeyconvention.com/wp-content/themes/hoarder/images/OBEY-2017-BG-03.jpg");
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: .1em; }
+  .artist-detail .content {
+    max-width: 700px;
+    margin: auto;
+    padding: 2em;
+    padding-top: 2rem;
+    color: white; }
+  .artist-detail h2 {
+    font-weight: 600; }
+  .artist-detail .close-artist-detail {
+    margin-bottom: 4em; }
+    .artist-detail .close-artist-detail:hover {
+      cursor: pointer; }
+    .artist-detail .close-artist-detail img {
+      width: 48px;
+      display: inline-block;
+      margin-right: 1rem; }
+  .artist-detail img.artist-photo {
+    background-color: white;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 300px; }
+
+.artist-detail-link:hover {
+  cursor: pointer; }
+
+.artist-item {
+  margin-bottom: 2rem;
+  line-height: 1em; }
+
+/*# sourceMappingURL=style.css.map */

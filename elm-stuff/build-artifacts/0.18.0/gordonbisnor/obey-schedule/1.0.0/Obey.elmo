@@ -1,0 +1,4 @@
+var _gordonbisnor$obey_schedule$Obey$main = A2(
+	_elm_lang$navigation$Navigation$program,
+	_gordonbisnor$obey_schedule$Message$OnLocationChange,
+	{init: _gordonbisnor$obey_schedule$Init$init, view: _gordonbisnor$obey_schedule$View$view, update: _gordonbisnor$obey_schedule$Update$update, subscriptions: _gordonbisnor$obey_schedule$Subscriptions$subscriptions})();

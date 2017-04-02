@@ -1,0 +1,14 @@
+var _gordonbisnor$obey_schedule$ArtistItem$artistItem = function (artist) {
+	return A2(
+		_elm_lang$html$Html$li,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('artist-item'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _gordonbisnor$obey_schedule$ArtistName$artistName(artist),
+			_1: {ctor: '[]'}
+		});
+};

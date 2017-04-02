@@ -1,0 +1,85 @@
+var _gordonbisnor$obey_schedule$Content$content = {
+	ctor: '::',
+	_0: {
+		id: 1,
+		name: 'Thursday',
+		events: {
+			ctor: '::',
+			_0: {
+				artists: {
+					ctor: '::',
+					_0: {id: 1, name: 'Kaie Kellough', link: 'http://www.obeyconvention.com/artists/kaie-kellough/'},
+					_1: {ctor: '[]'}
+				},
+				venue: 'Halifax Central Library',
+				time: '6:30-7:30pm'
+			},
+			_1: {
+				ctor: '::',
+				_0: {
+					artists: {
+						ctor: '::',
+						_0: {id: 2, name: 'Nadja', link: 'http://www.obeyconvention.com/artists/nadja/'},
+						_1: {
+							ctor: '::',
+							_0: {id: 3, name: 'Sounds of the Mountain', link: 'http://www.obeyconvention.com/artists/sound-of-the-mountain/'},
+							_1: {
+								ctor: '::',
+								_0: {id: 4, name: 'Cloaked Figure', link: 'http://www.obeyconvention.com/artists/cloaked-figure/'},
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					venue: 'Fort Massey',
+					time: '7:30-10pm'
+				},
+				_1: {ctor: '[]'}
+			}
+		}
+	},
+	_1: {
+		ctor: '::',
+		_0: {
+			id: 2,
+			name: 'Friday',
+			events: {
+				ctor: '::',
+				_0: {
+					artists: {
+						ctor: '::',
+						_0: {id: 5, name: 'Lungbutter', link: 'http://www.obeyconvention.com/artists/lungbutter/'},
+						_1: {
+							ctor: '::',
+							_0: {id: 6, name: 'Alienation', link: 'http://www.obeyconvention.com/artists/alienation/'},
+							_1: {ctor: '[]'}
+						}
+					},
+					venue: 'Memorial North Library',
+					time: '6-8pm'
+				},
+				_1: {
+					ctor: '::',
+					_0: {
+						artists: {
+							ctor: '::',
+							_0: {id: 7, name: 'Ridwan rau rau', link: ''},
+							_1: {
+								ctor: '::',
+								_0: {id: 8, name: 'Beck Gilmer-Osborne', link: ''},
+								_1: {
+									ctor: '::',
+									_0: {id: 9, name: 'Baby Morocco', link: ''},
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						venue: 'Khyber',
+						time: '6-8pm'
+					},
+					_1: {ctor: '[]'}
+				}
+			}
+		},
+		_1: {ctor: '[]'}
+	}
+};

@@ -1,0 +1,18 @@
+var _gordonbisnor$obey_schedule$InitialModel$analyze = F2(
+	function (model, route) {
+		var _p0 = route;
+		return _elm_lang$core$Native_Utils.update(
+			model,
+			{route: route});
+	});
+var _gordonbisnor$obey_schedule$InitialModel$initialModel = function (currentRoute) {
+	var model = {
+		data: _gordonbisnor$obey_schedule$Content$content,
+		artists: _gordonbisnor$obey_schedule$Artists$artists,
+		events: _gordonbisnor$obey_schedule$GetEvents$getEvents(_gordonbisnor$obey_schedule$Content$content),
+		selectedDayName: 'Thursday',
+		route: currentRoute,
+		artistDetail: _elm_lang$core$Maybe$Nothing
+	};
+	return A2(_gordonbisnor$obey_schedule$InitialModel$analyze, model, currentRoute);
+};

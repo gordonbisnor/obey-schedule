@@ -6,9 +6,20 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "ignore": [
+      "elm-stuff",
+      "node-modules/**/*",
+      ".firebaserc",
+      ".gitignore",
+      "database.rules.json",
+      "elm-package.json",
+      "firebase.json",
+      "Gruntfile.js",
+      "LICENSE",
+      "Obey.elm",
+      "package.json",
+      "README.md"
     ]
-  },
-  "database": {
-    "rules": "database.rules.json"
   }
 }

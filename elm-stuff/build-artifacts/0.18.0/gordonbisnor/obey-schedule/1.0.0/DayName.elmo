@@ -1,0 +1,14 @@
+var _gordonbisnor$obey_schedule$DayName$dayName = function (model) {
+	return A2(
+		_elm_lang$html$Html$h1,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('day-name'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text(model.selectedDayName),
+			_1: {ctor: '[]'}
+		});
+};

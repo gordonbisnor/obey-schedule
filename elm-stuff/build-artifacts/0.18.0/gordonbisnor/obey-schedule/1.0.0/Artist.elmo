@@ -1,0 +1,4 @@
+var _gordonbisnor$obey_schedule$Artist$Artist = F5(
+	function (a, b, c, d, e) {
+		return {id: a, name: b, link: c, bio: d, photo: e};
+	});
